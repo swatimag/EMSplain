@@ -6,8 +6,8 @@ files:
   
 hooks:
   BeforeInstall:
-    - location: scripts/apache_stop.sh
+    - location: apache_stop.sh
       timeout: 300
   ApplicationStart:
-    - location: scripts/apache_start.sh
+    - location: apache_start.sh
       timeout: 300
