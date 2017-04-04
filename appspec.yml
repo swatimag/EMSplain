@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /target/EmployeeApplication.war
+    destination:/var/lib/tomcat8/webapps 
+  
+hooks:
+  BeforeInstall:
+    - location: scripts/apache_stop.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/apache_start.sh
+      timeout: 300
