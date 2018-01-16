@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.sample.mvc.model.EmployeeCommand;
 
-public interface EmployeeDAO {
+public interface employeeDAO {
 	public void addEmployee(EmployeeCommand employee);
 	public List<EmployeeCommand> listContact();
 	public void deleteEmployee(Integer employeeId);
