@@ -39,7 +39,7 @@ public class employeeController {
 	}
 	 
 	@RequestMapping(value = "/edit/{code}")
-	public String getEmployeeById(@PathVariable ("code") Integer empCode, Model model) {
+	public String GetEmployeeById(@PathVariable ("code") Integer empCode, Model model) {
 		EmployeeCommand employee = employeeService.getEmployeebyId(empCode);
 		model.addAttribute("employee", employee);
 		return "edit";
