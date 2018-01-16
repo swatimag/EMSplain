@@ -14,7 +14,7 @@ import com.sample.mvc.model.EmployeeCommand;
 import com.sample.mvc.service.EmployeeService;
 
 @Controller
-public class EmployeeController {
+public class employeeController {
 	@Autowired
 	private EmployeeService employeeService;
 	
